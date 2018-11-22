@@ -1,0 +1,4 @@
+driver:
+  path: '/Users/umemiya/.rbenv/shims/chromedriver'
+sushi:
+  url: 'http://typingx0.net/sushida/play.html'
