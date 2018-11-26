@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51b30cf5-ac5e-4312-a343-3a6cc3abbb54" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webdrive/driver_test.py" afterPath="$PROJECT_DIR$/webdrive/driver_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="driver_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="driver_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdrive/driver_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -33,6 +34,16 @@
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,12 +115,6 @@
               <item name="internet_yakuza" type="b2602c69:ProjectViewProjectNode" />
               <item name="internet_yakuza" type="462c0819:PsiDirectoryNode" />
               <item name="webdrive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="internet_yakuza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="internet_yakuza" type="462c0819:PsiDirectoryNode" />
-              <item name="webdrive" type="462c0819:PsiDirectoryNode" />
-              <item name="driver" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,6 +241,14 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
