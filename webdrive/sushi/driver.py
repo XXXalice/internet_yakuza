@@ -25,6 +25,7 @@ class Browser(Alert):
         if not unique:
             self.driver.get(self.param_dict['sushi']['url'])
             self.driver.set_page_load_timeout(5)
+            self.stay(10) #startup
         else:
             self.driver.get(unique)
 
@@ -37,3 +38,6 @@ class Browser(Alert):
         except:
             Alert.danger_alert('Cant find app.')
 
+
+    def stay(self, time):
+        sleep(time)
