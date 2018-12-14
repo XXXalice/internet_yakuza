@@ -25,19 +25,22 @@ class Browser(Alert):
         if not unique:
             self.driver.get(self.param_dict['sushi']['url'])
             self.driver.set_page_load_timeout(5)
-            self.stay(10) #startup
         else:
             self.driver.get(unique)
 
 
     #if you want to get new app(webGL ver), execute this func at 0 argument.
     #else, u wanto get old one, plz pass argument {cname}.
-    def get_app(self, cname='#canvas'):
+    def get_app(self, cname='#canvas', loading_time=7):
         try:
-            self.items['sushida_webgl'] = self.driver.find_element_by_class_name(cname)
+            self.stay(loading_time)
+            self.items['sushida_webgl'] = self.driver.find_element_by_id(cname)
         except:
             Alert.danger_alert('Cant find app.')
+        else:
+            Alert.safe_alert('Success find app.')
 
 
     def stay(self, time):
+        Alert.safe_alert('staying in time.sleep() {}sec'.format(str(time)))
         sleep(time)
