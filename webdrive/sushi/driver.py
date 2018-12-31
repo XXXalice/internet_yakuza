@@ -3,6 +3,7 @@ import yaml
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 
 from alert import Alert
 
@@ -31,7 +32,7 @@ class Browser(Alert):
 
     #if you want to get new app(webGL ver), execute this func at 0 argument.
     #else, u wanto get old one, plz pass argument {cname}.
-    def get_app(self, cname='#canvas', loading_time=7):
+    def get_app(self, cname='#canvas', loading_time=5):
         try:
             self.stay(loading_time)
             self.items['sushida_webgl'] = self.driver.find_element_by_id(cname)
@@ -44,3 +45,25 @@ class Browser(Alert):
     def stay(self, time):
         Alert.safe_alert('staying in time.sleep() {}sec'.format(str(time)))
         sleep(time)
+
+
+    def driving_webgl(self):
+
+        def __start(webgl_app, driver):
+            app_locate = webgl_app.location
+            start_button = {'x':app_locate['x'] + int(250),
+                            'y':app_locate['y'] + int(150)
+                            }
+            click_action = ActionChains(driver)
+            click_action.move_to_element_with_offset(to_element=webgl_app, xoffset=250, yoffset=-260)
+
+            try:
+                click_action.click()
+                click_action.perform()
+            except:
+                Alert.danger_alert('Cant click.')
+            else:
+                Alert.safe_alert('Success click.')
+
+        self.stay(time=5)
+        __start(webgl_app=self.items['sushida_webgl'], driver=self.driver)
